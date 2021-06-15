@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "configurationVersions": [
+      4,
+      2
+    ],
+    "clusterVersion": "Mock version"
+  },
+  "dashboardMetadata": {
+    "name": "Example Dashboard",
+    "owner": "Example Owner",
+    "shared": true,
+    "dashboardFilter": {
+      "timeframe": "l_72_HOURS",
+      "managementZone": {
+        "id": "3438779970106539862",
+        "name": "Example Management Zone"
+      }
+    },
+    "dynamicFilters": {
+      "filters": [
+        "SERVICE_TYPE"
+      ],
+      "tagSuggestionTypes": [
+        "HOST_LIKE"
+      ]
+    }
+  },
+  "tiles": [
+    {
+      "name": "Hosts",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 0,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Applications",
+      "tileType": "HEADER",
+      "configured": true,
+      "bounds": {
+        "top": 0,
+        "left": 304,
+        "width": 304,
+        "height": 38
+      },
+      "tileFilter": {}
+    },
+    {
+      "name": "Host health",
+      "tileType": "HOSTS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 0,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "managementZone": {
+          "id": "3438779970106539862",
+          "name": "Example Management Zone"
+        }
+      },
+      "chartVisible": true
+    },
+    {
+      "name": "Application health",
+      "tileType": "APPLICATIONS",
+      "configured": true,
+      "bounds": {
+        "top": 38,
+        "left": 304,
+        "width": 304,
+        "height": 304
+      },
+      "tileFilter": {
+        "managementZone": {
+          "id": "3438779970106539862",
+          "name": "Example Management Zone"
+        }
+      },
+      "chartVisible": true
+    }
+  ]
+}
